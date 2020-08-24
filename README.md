@@ -1,4 +1,4 @@
-README.md
+
 Women Who Code - Mission: Predictable
 A Virtual Machine Learning Hackathon to Battle Covid-19
 
