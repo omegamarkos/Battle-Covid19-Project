@@ -3,8 +3,6 @@ Women Who Code - Mission: Predictable
 A Virtual Machine Learning Hackathon to Battle Covid-19
 
 <IMG SRC="./Blacks_Covid19_sm.png" ALT="Blacks_Covid19">
-
-
 _CDC / GETTY / THE ATLANTIC_
 Project Submission
 TEAM: #34
