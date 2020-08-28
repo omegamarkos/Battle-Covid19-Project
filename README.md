@@ -24,10 +24,12 @@ __COVID-19 Death Rates Higher in Blacks__
 
 __Blacks are dying at a rate higher than all others races in America__
 > The share of the Black population is __13%__, while the deaths for Blacks is __22%__ (as of July 22, 2020)
-![Covid19-Death_Popl_Distrib.png](attachment:Covid19-Death_Popl_Distrib.png)
+
+<IMG SRC="./Covid19-Death_Popl_Distrib.png" ALT="Covid19-Death_Popl_Distrib">
 
 > __31%__ of the States in America are above the National average for Black Deaths (of __22%__ ). 
-![Covid19-BlackDeath_by_States.png](attachment:Covid19-BlackDeath_by_States.png)
+
+<IMG SRC="./Covid19-BlackDeath_by_States.png" ALT="Covid19-BlackDeath_by_States">
 
 ## The Dataset
 Our team analyzed COVID-19 policies, cases and deaths by state and race using the most recent U.S. Census data and the latest information we could gather on COVID-19 events and news articles.
@@ -117,8 +119,7 @@ _Why?...  And find out, if ... Disasters do Discriminate._
 ## Problem Description
 Our analysis found that COVID-19 impacting Black Deaths in __36__ states, is higher than their population share.
 
-![Covid19-Death_Popl_Distrib_2.png](attachment:Covid19-Death_Popl_Distrib_2.png)
-
+<IMG SRC="./Covid19-Death_Popl_Distrib_2.png" ALT="Covid19-Death_Popl_Distrib_2">
 ## Machine Learning Modeling
 To better understand the impact of Black Deaths in the US related to COVID-19, our team analyzed COVID-19 policies, cases and deaths by state and race using the most recent U.S. Census data.  Equipped with more __insightful information__ we chose to use unsupervised machine learning and dimensionality reduction techniques to identify clusters within the datasets to learn, from the properties of the data. 
 
@@ -129,24 +130,28 @@ Our machine learning approach included performing the following key tasks:
 In our evaluation of building PCA model in AWS Sagemaker, we examined the makeup of each PCA component based on the weightings of the original features that are included in the component. For example, the following image shows __PCA Component Makeup: #3__. This component describes attributes of states that have high poverty, __high Black deaths and cases__, high indicators for ending stay at home policies and initiating re-opening mandates. These insights proved to be very valuable for us in the population segmentation process using K-means clustering.  
 
 __PCA Component Makeup: #3__
-![PCA_3.png](attachment:PCA_3.png)
+
+<IMG SRC="./PCA_3.png" ALT="PCA_3">
 
 K-means is a clustering algorithm that identifies clusters of similar states based on their attributes. Since we had __228__ attributes in our original dataset, the large feature space may have made it difficult to cluster the states effectively. Instead, we reduced the feature space to 5 PCA components and implemented K-means algorithm to create (4) clusters.
 
 __K-means |  4 Clusters__
-![Cluster_Size.png](attachment:Cluster_Size.png)
+
+<IMG SRC="./Cluster_Size.png" ALT="Cluster_Size">
 
 In order to draw conclusions from our model, we evaluated the cluster centers. These centers helped to describe which features were characterize in each cluster. By combining PCA and K-means clustering, the information contained in the model attributes within the trained model, enabled us to gain more insights on the data.
 
 __Combining PCA and K-means__
-![Centoids.png](attachment:Centoids.png)
+
+<IMG SRC="./Centoids.png" ALT="Centoids">
 
 Using unsupervised learning, we clustered a dataset using K-means after reducing the dimensionality using PCA. By accessing the underlying models created within Amazon SageMaker, we were able to improve the explainability of our modelling and draw actionable conclusions. Using these techniques, we have been able to better understand the characteristics of different states in the US and segment them into groupings accordingly.
 
 Based on our analysis we found Cluster 2, had a high correlation with the PCA component for __BelowPoverty/DeathBlackPercent__.
 
 __Analysis of Cluster 2__
-![Cluster_2_States_Data.png](attachment:Cluster_2_States_Data.png)
+
+<IMG SRC="./Cluster_2_States_Data.png" ALT="Cluster_2_States_Data">
 
 In our analysis of the all of the clusters, we found that __Cluster 2__ best described how blacks in these states were being impacted by COVID-19.  This process revealed new features strongly associated with this segmentation, such as, __high poverty, high Black deaths and cases, high indicators for ending stay at home policies and initiating re-opening mandates.__
 
@@ -200,5 +205,5 @@ __by Socioeconomic Issues__
 Our recommendations involve having meaningful actions to support these communities and protect public health could include __protective policies for workers, including paid sick leave and provision of health insurance__.  For high poverty and unemployment policymakers should work to address __minimizing the income inequality gap__.
 
 During the pandemic to address poverty and unemployment we need to identify the black populations which need additional access to resources such as __testing, personal protective equipment, education, and support to implement recommended social distancing practices__; support food pantries and meal delivery services for food assistance; and __relief funds are available to the communities most in need__ by streamlining application processes and allowing for __extensions of subsidies when the crisis begins to subside__.
+<IMG SRC="./Team_34.png" ALT="Team_34">
 
-![Team_34.png](attachment:Team_34.png)
