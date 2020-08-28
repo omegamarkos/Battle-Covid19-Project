@@ -2,7 +2,8 @@
 __A Virtual Machine Learning Hackathon to Battle Covid-19__
 
 
-![Blacks_Covid19_sm.png](attachment:Blacks_Covid19_sm.png)
+<IMG SRC="./Blacks_Covid19_sm.png" ALT="Blacks_Covid19">
+
 _CDC / GETTY / THE ATLANTIC_
 
 ## Project Submission 
